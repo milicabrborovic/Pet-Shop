@@ -451,6 +451,9 @@ form input:last-of-type:hover{
 	#naslovna .container{
 		display:none;
 	}
+.proizvod{
+	padding:0;
+	}
     ul li{
         display: block;  
     }
