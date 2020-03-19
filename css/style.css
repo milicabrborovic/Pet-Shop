@@ -454,6 +454,9 @@ form input:last-of-type:hover{
 	.proizvod{
 		padding:0;
 	}
+	.proizvod img{
+		width:250px;
+	}
     ul li{
         display: block;  
     }
