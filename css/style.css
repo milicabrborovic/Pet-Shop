@@ -457,6 +457,9 @@ form input:last-of-type:hover{
         background: rgb(16, 8, 6);
         color: #fff;
     }
+	#naslovna .container{
+		display:none;
+	}
    .menu li ul.dropdown a{
        color:#fff;  
    }
