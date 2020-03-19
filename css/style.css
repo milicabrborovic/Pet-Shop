@@ -448,6 +448,9 @@ form input:last-of-type:hover{
     .mobile_menu.clicked span:last-child {
         display: none;
     }
+	#naslovna .container{
+		display:none;
+	}
     ul li{
         display: block;  
     }
