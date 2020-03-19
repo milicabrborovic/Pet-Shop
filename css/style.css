@@ -1,0 +1,480 @@
+@import url(reset.css);
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+	color:#fff;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+p{
+line-height:1.5;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1{
+	text-align:center;
+	font-size:50px;
+	padding:35px 0;
+	font-family: 'Shrikhand', cursive;
+	color:#3b0e0e;
+}
+body{
+	font-family: 'Sen', sans-serif;
+}
+:hover{
+	transition: 1.5s;
+	-webkit-transition: 1.5s;
+	-moz-transition: 1.5s;
+	-ms-transition: 1.5s;
+	-o-transition: 1.5s;
+}
+/*end generalni opisi*/
+
+/*start header*/
+header{
+	display:flex;
+	justify-content:space-between;
+	padding:10px;
+	background:#3b0e0e;
+}
+header input{
+	width:100%;
+	height:3%;
+	margin:50px;
+	font-size:30px;
+	font-family: 'Indie Flower', cursive;
+	
+}
+.cart a i{
+	font-size:50px;
+	padding-top:20px;
+}
+.cart a i:first-child{
+	margin-right:15px;
+}
+.cart{
+	display:flex;
+	justify-content:space-around;
+}
+.cart a i:hover{
+	color:#d8b11f;
+}
+nav ul li a{
+	font-family: 'Indie Flower', cursive;
+	font-size:30px;	
+}
+nav li.active a{
+    color:#d8b11f;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #fff;
+    text-decoration: none;
+	text-transform:uppercase;
+}
+ul li a:hover{
+    color:#d8b11f;
+    
+}
+ul li ul.dropdown{
+    min-width: 100%;
+    background:#3b0e0e;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+.dropdown li a{
+	font-size:20px;
+}
+nav ul{
+	text-align:center;
+	background:#600606;
+	background:#3b0e0e;
+	border-top:1px solid #f2f3f0;;
+}
+.mobile_menu {
+    display: none;
+}
+/*end header*/
+
+/*start naslovna*/
+#naslovna .container{
+	display:flex;
+}
+
+/*start proizvod1,2,3,4*/
+.container.proizvod2{
+	display:flex;
+}
+.slicke img{
+	width:150px;
+	margin-right:10px;
+}
+.slicke{
+	border:3px solid #3b0e0e;
+	margin:1px;
+	position:relative;
+}
+.havemargin{
+	margin:20px 0;
+}
+.description{
+	background:#f2f3f0;
+	padding:5%;
+	margin-left:3%;
+}
+.description h2{
+	font-size:30px;
+}
+.description p{
+	padding:10px 0;
+}
+.description .dugme{
+	float:right;
+	width:30%;
+}
+.dugme button:first-child{
+	background:#036ffc;
+	border:1px solid #036ffc;
+}
+.dugme button:last-child{
+	background:#03a1fc;
+	border:1px solid #03a1fc;
+}
+.dugme  button:hover{
+	background:#030ffc;
+}
+.description  button {
+	display:block;
+	width:130px;
+	margin-top:10px;
+	height:35px;
+	font-weight:bold;
+}
+.description h3{
+	font-size:30px;
+	font-weight:bold;
+	float:left;
+	width:20%;
+	padding-top:15px;
+}
+/*end proizvod1,2,3,4*/
+/*start kupovina*/
+#kupovina{
+	background:#f2f3f0;
+}
+.proizvodi{
+	display:flex;
+	justify-content: space-betwen;
+	flex-wrap:wrap;
+}
+.proizvodi img{
+	width:300px;
+}
+.proizvod{
+	border:1px solid #3b0e0e;
+	padding:20px;
+	margin:0 auto;
+	margin-bottom:20px;
+	background:#fff;
+}
+.opis{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+	background:#3b0e0e;
+}
+.opis h2{
+	color:#fff;
+	padding:10px;
+	font-size:20px;
+}
+.opis p{
+	color:#fff;
+	padding:10px;
+	font-size:30px;
+	font-weight:bold;
+	
+}
+.proizvod:hover{
+	transform:translateY(-15px);
+}
+.proizvod:hover p{
+	transform:scale(1.3);
+	transition:1s;
+}
+/*end kupovina*/
+/*start footer*/
+footer p{
+	padding:2%;
+	color:#fff;
+	text-align:center;
+}
+footer{
+	background: #3b0e0e;
+}
+/*end footer*/
+/*start cart*/
+.cart1 .slicke{
+	border:none;
+}
+.cartleft{
+	display:flex;
+	justify-content:space-between;
+	border:1px solid gray;
+	padding:20px;
+	margin:20px 0;
+	line-height:1.5;
+}
+.cart1 .cartleft{
+	background: #f2f3f0;
+}
+.price{
+	margin-left:10px;
+	font-weight:bold;
+	font-size:20px;
+}
+.text a{
+	color:blue;
+	margin-right:10px;
+	border-right:1px solid gray;
+	padding:2px;
+	margin-top:10px;
+}
+.text p{
+	margin-bottom:15px;
+	color:green;
+}
+.cartright{
+	border:1px solid gray;
+	padding:20px;
+	margin:20px 0;
+	background:#f2f3f0;
+}
+.cartright button{
+	display:block;
+	margin:0 auto;
+	width:50%;
+	height:30px;
+	background:#036ffc;
+	border:1px solid #036ffc;
+	margin-bottom:10px;
+	color:#fff;
+	font-weight:bold;
+	
+}
+.cartright button:hover{
+	background:#57eb88;
+	border:1px solid #57eb88;
+}
+.cartright p:last-of-type{
+	border-top:1px solid gray;
+	font-size:20px;
+	font-weight:bold;
+}
+/*end cart*/
+
+/*start form*/
+
+.cartrightfor{
+	border:1px solid gray;
+	padding:10px;
+	display:flex;
+	justify-content:space-between;
+	width:50%;
+}
+.total p:nth-child(4){
+	margin-top:10px;
+	font-weight:bold;
+}
+.total p:last-child{
+	font-weight:bold;
+	font-size:25px;
+}
+form{
+	margin:10px;
+}
+form input{
+	width:50%;
+	margin-bottom:15px;
+	height:40px;
+}
+form input:last-of-type{
+	background: #036ffc;
+	font-size:20px;
+	color:#fff;
+}
+form input:last-of-type:hover{
+	background: #57eb88;
+	border: 1px solid #57eb88;
+}
+#form{
+	background: #f2f3f0;
+	padding:15px;
+}
+#form .cartleft, #form .cartrightfor{
+	background:#fff;
+}
+/*end form*/
+/*start @media*/
+@media(max-width:780px){
+	header{
+		display:flex;
+		justify-content:space-between;
+	}
+	header input{
+		width:40%;
+	}
+	.logo{
+		width:20%;
+	}
+	.cart{
+		display:block;
+	}
+	.cart a i{
+		font-size:30px;
+	}
+	 .menu{
+        display:none;
+    }
+	   .mobile_menu {
+        display: block;
+        width: 43px;
+        height: 43px;
+        background: 0 0;
+        border: 2px solid #3b0e0e;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        position: relative;
+		left:10px;
+    }
+
+    .mobile_menu span {
+        position: absolute;
+        left: 3px;
+        right: 3px;
+        height: 5px;
+        background:#3b0e0e;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease
+    }
+
+    .mobile_menu span:first-child {
+        top: 5px;
+    }
+
+    .mobile_menu span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%)
+    }
+
+    .mobile_menu span:last-child {
+        bottom: 5px;
+    }
+
+    .mobile_menu.clicked {
+        border-color:#3b0e0e;;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+    }
+
+    .mobile_menu.clicked span:first-child {
+        background:#3b0e0e;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        -webkit-transform: translateY(-50%) rotate(45deg);
+        -moz-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
+        -o-transform: translateY(-50%) rotate(45deg);
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease
+    }
+
+    .mobile_menu.clicked span:nth-child(2) {
+        background:#3b0e0e;
+        transform: translateY(-50%) rotate(-45deg);
+        -webkit-transform: translateY(-50%) rotate(-45deg);
+        -moz-transform: translateY(-50%) rotate(-45deg);
+        -ms-transform: translateY(-50%) rotate(-45deg);
+        -o-transform: translateY(-50%) rotate(-45deg);
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease
+    }
+
+    .mobile_menu.clicked span:last-child {
+        display: none;
+    }
+    ul li{
+        display: block;  
+    }
+    .menu li ul.dropdown{
+        position: relative;
+        display:block;
+        background: rgb(16, 8, 6);
+        color: #fff;
+    }
+   .menu li ul.dropdown a{
+       color:#fff;  
+   }
+   .container.proizvod2, .container.cart1, .cartleft{
+	   flex-direction:column;
+   }
+   .havemargin{
+	   display:flex;
+	   justify-content:space-around;
+   }
+   .description .dugme{
+	float:right;
+	width:50%;
+}
+	.cartrightfor{
+	width:100%;
+}
+	.form input{
+		width:100%;
+	}
+}
