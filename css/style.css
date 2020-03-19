@@ -123,7 +123,7 @@ nav ul{
 /*end header*/
 
 /*start naslovna*/
-#naslovna .container img{
+#naslovna .container{
 	display:flex;
 }
 
