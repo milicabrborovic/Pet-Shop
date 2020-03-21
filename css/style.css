@@ -449,6 +449,7 @@ form input:last-of-type:hover{
     }
 	#naslovna .container img{
 	width:100%;
+	height:auto;
 	}
 	.proizvod{
 		padding:0;
