@@ -446,7 +446,7 @@ form input:last-of-type:hover{
     }
 
     .mobile_menu.clicked span:last-child {
-       display: none;
+       display:none;
     }
 	#naslovna .container{
 		width:100%;
