@@ -362,7 +362,7 @@ form input:last-of-type:hover{
 	 .menu{
         display:none;
     }
-	   .mobile_menu {
+	.mobile_menu {
         display: block;
         width: 43px;
         height: 43px;
@@ -374,7 +374,7 @@ form input:last-of-type:hover{
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         position: relative;
-		left:10px;
+	left:10px;
     }
 
     .mobile_menu span {
@@ -446,10 +446,10 @@ form input:last-of-type:hover{
     }
 
     .mobile_menu.clicked span:last-child {
-       width:100%;
+       display: none;
     }
 	#naslovna .container{
-		display:none;
+		width:100%;
 	}
 	.proizvod{
 		padding:0;
